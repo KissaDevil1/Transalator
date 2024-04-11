@@ -43,7 +43,10 @@
 .headline {
   text-align: center;
   margin-top: 20x; /* Adjust this value according to your design */
-  color: #202020; /* Adjust color as needed */
+  background: linear-gradient(90deg,#00ffff,#ff00c3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2rem; /* Adjust font size as needed */
   font-weight:bolder; /* Adjust font weight as needed */
   position: absolute;
