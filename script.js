@@ -16,6 +16,24 @@ function populateDropdown(dropdown, options) {
     dropdown.querySelector("ul").appendChild(li);
   });
 }
+document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("mousemove", function(e) {
+    createParticle(e);
+  });
+});
+
+function createParticle(e) {
+  const particle = document.createElement("div");
+  particle.className = "particle";
+  particle.style.left = e.pageX + "px";
+  particle.style.top = e.pageY + "px";
+  document.querySelector(".cursor-particles").appendChild(particle);
+  
+  // Remove particle after animation
+  setTimeout(function() {
+    particle.remove();
+  }, 1000);
+}
 
 function translate() {
   const inputText = inputTextElem.value;
