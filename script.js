@@ -47,6 +47,8 @@ function translate() {
     .then((json) => {
       console.log(json);
       outputTextElem.value = json[0].map((item) => item[0]).join('');
+      // Reattach the event listener after translation
+      translateButton.addEventListener('click', translate);
     })
     .catch((error) => {
       console.log(error);
