@@ -101,7 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Event listener for translate button click
   translateButton.addEventListener('click', translate);
 });
+const darkModeCheckbox = document.getElementById("dark-mode-btn");
 
+darkModeCheckbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+});
 const swapBtn = document.querySelector(".swap-position"),
   inputLanguage = inputLanguageDropdown.querySelector(".selected"),
   outputLanguage = outputLanguageDropdown.querySelector(".selected");
