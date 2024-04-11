@@ -128,3 +128,8 @@ swapBtn.addEventListener("click", (e) => {
   inputTextElem.value = outputTextElem.value;
   outputTextElem.value = tempInputText;
 });
+const inputChars = document.querySelector("#input-chars");
+
+inputTextElem.addEventListener("input", (e) => {
+  inputChars.innerHTML = inputTextElem.value.length;
+});
