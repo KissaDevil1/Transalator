@@ -291,6 +291,30 @@ color: #000000;
   box-shadow:var(--primary-color) 0px 7px 29px 8px;
   background-color: var(--primary-color); 
 }
+#translate-hist {
+  height: 50px;
+  display: flex;
+  align-items:center;
+  position: absolute;
+  top: 435px;
+  right: 80px;
+  gap: 20px;
+  padding: 0 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing:1.5px;
+  color: var(--text-color);
+  cursor: pointer;
+  background-color: var(--bg-color);
+}
+#translate-hist:hover {
+  color: var(--primary-text-color);
+  letter-spacing: 3px;
+  box-shadow:var(--primary-color) 0px 7px 29px 8px;
+  background-color: var(--primary-color); 
+}
 .card-bottom {
   display: flex;
   align-items: center;
